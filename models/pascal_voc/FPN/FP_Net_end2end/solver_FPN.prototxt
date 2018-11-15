@@ -1,0 +1,27 @@
+net: "models/pascal_voc/FPN/FP_Net_end2end/train_FPN.prototxt"
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 50000
+display:20
+average_loss: 100
+momentum:0.9
+weight_decay: 0.0001
+snapshot: 1000
+snapshot_prefix: "fpn"
+iter_size: 2
+
+
+#test_iter: 5000
+#test_interval: 5000
+#base_lr: 0.05
+#display: 20
+#lr_policy: "poly"
+#max_iter: 650000
+#power: 1
+#momentum: 0.9
+#weight_decay: 0.0005
+#snapshot: 5000
+#snapshot_prefix: "models/pascal_voc/FPN"
+#random_seed: 0
+#test_initialization: false
+#device_id: 0,1
